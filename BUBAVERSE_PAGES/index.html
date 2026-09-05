@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BUBAVERSE BOT STUDIO</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand"><div class="logo">◒</div><div><b>BUBAVERSE</b><span>BOT STUDIO</span></div></div>
+  <nav>
+    <a class="active">⌘ <span>Конструктор</span></a><a>⌂ <span>Дашборд</span></a><a>▣ <span>Боты</span></a><a>▤ <span>Шаблоны</span></a><a>✣ <span>Плагины</span></a><a>✉ <span>Рассылки</span></a><a>♙ <span>Пользователи</span></a><a>🛒 <span>Магазин</span></a><a>▥ <span>Платежи</span></a><a>◫ <span>Аналитика</span></a><a>☷ <span>Журнал</span></a><a>⚙ <span>Настройки</span></a>
+  </nav>
+  <div class="plan"><small>Тариф</small><b>PRO 👑</b><span>Действует до<br>25.06.2025</span><button>Управление</button></div>
+</aside>
+<header class="topbar">
+  <div class="mobile-brand"><div class="logo">◒</div><b>BUBAVERSE</b></div>
+  <div class="bot-select">🤖 Мой магазин бот⌄</div>
+  <div class="topnav"><b class="sel">⌘ Конструктор</b><span>♙ Боты</span><span>♙ Пользователи</span><span>✉ Рассылки</span><span>▥ Аналитика</span><span>🛒 Магазин</span><span>⚙ Настройки</span></div>
+  <div class="top-actions"><button class="pro">👑 PRO</button><button>☼</button><button>♧<i>12</i></button><button>👤 Buba⌄</button></div>
+</header>
+<main>
+ <section class="workspace">
+  <div class="flow-head"><b>Сценарий: Основной сценарий</b><span>✎</span><div></div><label>✓ Сохранено</label><button class="test">▶ Тестировать</button><button class="publish">♧ Опубликовать⌄</button></div>
+  <div class="builder">
+   <section class="palette"><h3>БЛОКИ</h3><input placeholder="⌕  Поиск блоков..."><div class="tabs"><b>Все</b><span>Основные</span><span>Действия</span><span>Логика</span></div>
+    <h5>СООБЩЕНИЯ</h5>
+    <div class="block">🔵 <span><b>Текст</b><small>Отправить текстовое сообщение</small></span></div><div class="block">📷 <span><b>Фото</b><small>Отправить изображение</small></span></div><div class="block">▶️ <span><b>Видео</b><small>Отправить видео</small></span></div><div class="block">🎵 <span><b>Аудио</b><small>Отправить аудио</small></span></div><div class="block">📄 <span><b>Файл</b><small>Отправить файл</small></span></div><div class="block">🎙 <span><b>Голосовое</b><small>Отправить голосовое</small></span></div><div class="block">🎨 <span><b>Стикер</b><small>Отправить стикер</small></span></div><div class="block">🎞 <span><b>Анимация (GIF)</b><small>Отправить GIF</small></span></div>
+    <h5>КНОПКИ</h5><div class="block">▦ <span><b>Кнопки</b><small>Inline / Reply кнопки</small></span></div><div class="block">▣ <span><b>Инлайн кнопки</b><small>Inline клавиатура</small></span></div><div class="block">☷ <span><b>Меню</b><small>Reply меню</small></span></div>
+    <h5>ДЕЙСТВИЯ</h5><div class="block">✕ <span><b>Условие</b><small>Ветвление по условию</small></span></div><div class="block">◷ <span><b>Пауза</b><small>Задержка выполнения</small></span></div><div class="block">↥ <span><b>Отправить запрос</b><small>API запрос</small></span></div>
+   </section>
+   <section class="canvas"><div class="tools"><button>↶</button><button>↷</button><button>⌕ 100%⌄</button><button>⌗</button><button>◉</button><button>▶</button></div><div class="grid"></div>
+    <div class="edge e1"></div><div class="edge e2"></div><div class="edge e3"></div><div class="edge e4"></div>
+    <div class="node start"><b>● &nbsp;Старт</b><small>/start</small></div>
+    <div class="node text n1"><em>▤</em><b>Текст</b><span>Привет! 👋<br>Добро пожаловать в наш<br>магазин!</span></div>
+    <div class="node buttons n2"><em>▦</em><b>Кнопки</b><span>Выберите категорию:</span><button>📱 Телефоны　●</button><button>💻 Ноутбуки　●</button><button>🎧 Аксессуары　●</button></div>
+    <div class="node cond"><em>⚡</em><b>Условие</b><span>Выбрал: Телефоны?</span><i>Да</i><i class="no">Нет</i></div>
+    <div class="node text n3"><em>▤</em><b>Текст</b><span>Вот наши телефоны:</span><button>Список товаров</button></div>
+    <div class="node text n4"><em>▤</em><b>Текст</b><span>Выберите другую<br>категорию</span></div>
+    <div class="node text n5"><em>▤</em><b>Текст</b><span>Отличный выбор! 😎<br>Вот что у нас есть:</span><button>Список товаров</button></div>
+    <div class="node action"><em>▣</em><b>Действие</b><span>Записать в переменную</span><code>last_category = {{category}}</code></div>
+    <div class="node inline"><em>▣</em><b>Инлайн кнопки</b><span>Хотите вернуться в меню?</span><button>🏠 В главное меню　＋</button></div>
+   </section>
+   <section class="phone-wrap"><div class="phone"><div class="notch"></div><div class="phone-head">‹ <span>Мой магазин бот<small>бот</small></span> ⋮</div><div class="chat"><div class="bubble user">/start <small>15:30 ✓</small></div><div class="bubble">Привет! 👋<br>Добро пожаловать в наш<br>магазин!<small>15:30</small></div><div class="bubble">Выберите категорию:<small>15:30</small></div><button>📱 Телефоны</button><button>💻 Ноутбуки</button><button>🎧 Аксессуары</button><div class="bubble user">📱 Телефоны<small>15:31 ✓</small></div><div class="bubble">📱 Вот наши телефоны:<small>15:31</small></div><button>Список товаров</button><div class="bubble">Хотите вернуться в меню?<small>15:31</small></div><button>🏠 В главное меню</button></div><div class="input">Сообщение...　🎙</div></div></section>
+   <section class="inspector"><div class="inspect-tabs"><b>СВОЙСТВА БЛОКА</b><span>ПЕРЕМЕННЫЕ</span></div><div class="inspect-title">▤ <b>Текст</b><small>ID: text_1</small></div><label>Текст сообщения</label><textarea>Привет! 👋
+Добро пожаловать в наш
+магазин!</textarea><h4>Дополнительно</h4><div class="row">Задержка перед отправкой <b>0 сек.</b></div><div class="row">Отправлять без уведомления <i class="toggle"></i></div><div class="row">Предпросмотр ссылок <i class="toggle on"></i></div><h4>Условия отображения</h4><button class="ghost">＋ Добавить условие</button><div class="row">Сохранить ответ пользователя <i class="toggle"></i></div><div class="row">Теги <button class="ghost">＋ Добавить тег</button></div><button class="danger">Удалить блок</button></section>
+  </div>
+ </section>
+ <section class="bottom"><div class="stats"><h3>СТАТИСТИКА БОТА</h3><div class="cards"><div>♙ <small>Пользователи</small><b>12 345</b><em>+15.2%</em></div><div>▣ <small>Сообщения</small><b>45 678</b><em>+23.7%</em></div><div>♧ <small>Подписки</small><b>2 345</b><em>+8.4%</em></div><div>🛍 <small>Продажи</small><b>67 890 ₽</b><em>+34.1%</em></div></div><div class="chart"></div></div><div class="events"><h3>ЖУРНАЛ СОБЫТИЙ</h3><p>15:31　Пользователь @user123 нажал /start</p><p>15:31　Отправлено сообщение: Привет!</p><p>15:32　Нажата кнопка: 📱 Телефоны</p><p>15:32　Отправлено сообщение с товарами</p><p>15:33　Пользователь нажал: В главное меню</p><a>Показать все события</a></div><div class="quick"><h3>БЫСТРЫЕ ДЕЙСТВИЯ</h3><p>⇧ Импортировать сценарий</p><p>⇩ Экспортировать сценарий</p><p>◫ Дублировать бота</p><p>▶ Перейти в тестирование</p><p class="red">⌫ Удалить бота</p></div><div class="integrations"><h3>ИНТЕГРАЦИИ</h3><p>🔵 Telegram Bot <b>• Подключено</b></p><p>💳 Платежные системы <a>Настроить</a></p><p>▦ Google Sheets <a>Настроить</a></p><p>⌘ Webhooks <a>Настроить</a></p><p>⌁ API <a>Настроить</a></p></div></section>
+ </main>
+</div><script src="assets/app.js"></script>
+</body></html>

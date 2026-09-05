@@ -1,0 +1,1 @@
+document.querySelectorAll('.block').forEach(x=>{x.draggable=true});document.querySelectorAll('.toggle').forEach(x=>x.onclick=()=>x.classList.toggle('on'));document.querySelectorAll('.test,.publish').forEach(x=>x.onclick=()=>{x.animate([{transform:'scale(1)'},{transform:'scale(.97)'},{transform:'scale(1)'}],{duration:180})});
