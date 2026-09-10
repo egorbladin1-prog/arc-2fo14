@@ -1,7 +1,18 @@
-# BUBAVERSE BOT STUDIO v2
+# BUBAVERSE BOT STUDIO v3
+Mobile-first redesign based on the UX patterns shown in the supplied BOT-T screenshots, with an original BUBAVERSE visual system.
 
-UX-first redesign inspired by the useful product structure of visual Telegram bot builders: dashboard, bot types, templates, scenarios, users, broadcasts, shop, analytics and modules.
+## Что сделано
+- mobile-first layout with drawer navigation
+- animated cards, modals, toasts, hover/press states
+- working navigation between all major sections
+- bot creation modal and template actions
+- functional scenario builder UI
+- add/delete/select blocks
+- block inspector with editable text/name
+- drag & drop blocks on desktop
+- mobile builder modes: blocks / scenario / settings / test
+- localStorage for page/settings/builder state
+- responsive dashboard, bots, users, broadcasts, shop, analytics, modules, settings
 
-Important: this is an original BUBAVERSE visual system, not a pixel-for-pixel copy of BOT-T assets or source code.
-
-Mobile uses separate builder modes instead of squeezing desktop's three columns into one screen.
+## Важно
+Это frontend v3. Backend/API/Telegram gateway подключается следующим этапом; интерфейс не маскирует это фейковыми сетевыми запросами.
